@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="surveystyles.css" />
+    <title>Survey Form Project</title>
+  </head>
+  <body>
+    <h1 id="title">survey form</h1>
+    <p id="description">tell me about you</p>
+
+    <form action="#" id="survey-form">
+      <label for="name" id="name-label"> Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Quincy Jones"
+        required
+      />
+
+      <label for="email" id="email-label"> E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="abc@gmail.com"
+        required
+      />
+
+      <label for="number" id="number-label">
+        Age
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="18"
+          max="65"
+          placeholder="27"
+        />
+      </label>
+
+      <label for="dropdown" id="dropdown">
+        How often do you listen to music?
+        <select name="dropdown" id="dropdown">
+          <option value="a" disabled selected>Select one</option>
+          <option value="b">Almost never</option>
+          <option value="c">Sometimes</option>
+          <option value="d">Everyday</option>
+        </select>
+      </label>
+      <br />
+
+      What is your favorite genre? <br />
+      <label><input type="radio" name="radio" id="radio" value="a" />Pop</label>
+      <label
+        ><input type="radio" name="radio" id="radio" value="b" />Trap</label
+      >
+      <label
+        ><input type="radio" name="radio" id="radio" value="c" />Rock</label
+      >
+      <label>
+        <input type="radio" name="radio" id="radio" value="d" />Classic</label
+      >
+      <br />
+
+      Who are your favorite artists? <br />
+      <label
+        ><input type="checkbox" name="cb" id="checkbox" value="1" />Doja
+        Cat</label
+      >
+      <label
+        ><input type="checkbox" name="cb" id="checkbox" value="2" />Travis
+        Scott</label
+      >
+      <label
+        ><input type="checkbox" name="cb" id="checkbox" value="3" />Taylor
+        Swift</label
+      >
+      <label
+        ><input
+          type="checkbox"
+          name="cb"
+          id="checkbox"
+          value="4"
+        />Beethoven</label
+      >
+      <br />
+      <span>Comments are welcome</span>
+      <textarea
+        name="comment"
+        id="comment"
+        placeholder="If you have something to say..."
+      ></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <footer>
+      FreeCodeCamp Survey Form Project <br />
+      Written and coded by Efe Tekce
+    </footer>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
